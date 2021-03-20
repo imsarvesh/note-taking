@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Note Taking",
+    "description": "Take notes for open tab",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
